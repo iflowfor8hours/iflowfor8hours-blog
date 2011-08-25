@@ -1,0 +1,300 @@
+/* number of columns */
+/* max grid width */
+/* compute width of 1 column */
+/* create a div spanning n columns */
+/* make an element span n columns */
+/* prepend n empty columns */
+/* append n empty columns */
+/* define max width in EMs for proper grid resizing */
+body {
+  font-size: 100;
+  max-width: 68.75em; }
+
+/* a row defines a new grid or subgrid */
+.row {
+  float: left;
+  width: 100%; }
+
+/* mixin usage */
+#menu {
+  float: left;
+  width: 20.833%; }
+
+#side {
+  float: left;
+  width: 20.833%; }
+
+#main {
+  margin-left: 4.167%;
+  float: left;
+  width: 50%;
+  margin-right: 4.167%; }
+
+/* For the html example */
+.span1 {
+  float: left;
+  width: 4.167%; }
+
+.prepend1 {
+  margin-left: 4.167%; }
+
+.append1 {
+  margin-right: 4.167%; }
+
+.span2 {
+  float: left;
+  width: 8.333%; }
+
+.prepend2 {
+  margin-left: 8.333%; }
+
+.append2 {
+  margin-right: 8.333%; }
+
+.span3 {
+  float: left;
+  width: 12.5%; }
+
+.prepend3 {
+  margin-left: 12.5%; }
+
+.append3 {
+  margin-right: 12.5%; }
+
+.span4 {
+  float: left;
+  width: 16.667%; }
+
+.prepend4 {
+  margin-left: 16.667%; }
+
+.append4 {
+  margin-right: 16.667%; }
+
+.span5 {
+  float: left;
+  width: 20.833%; }
+
+.prepend5 {
+  margin-left: 20.833%; }
+
+.append5 {
+  margin-right: 20.833%; }
+
+.span6 {
+  float: left;
+  width: 25%; }
+
+.prepend6 {
+  margin-left: 25%; }
+
+.append6 {
+  margin-right: 25%; }
+
+.span7 {
+  float: left;
+  width: 29.167%; }
+
+.prepend7 {
+  margin-left: 29.167%; }
+
+.append7 {
+  margin-right: 29.167%; }
+
+.span8 {
+  float: left;
+  width: 33.333%; }
+
+.prepend8 {
+  margin-left: 33.333%; }
+
+.append8 {
+  margin-right: 33.333%; }
+
+.span9 {
+  float: left;
+  width: 37.5%; }
+
+.prepend9 {
+  margin-left: 37.5%; }
+
+.append9 {
+  margin-right: 37.5%; }
+
+.span10 {
+  float: left;
+  width: 41.667%; }
+
+.prepend10 {
+  margin-left: 41.667%; }
+
+.append10 {
+  margin-right: 41.667%; }
+
+.span11 {
+  float: left;
+  width: 45.833%; }
+
+.prepend11 {
+  margin-left: 45.833%; }
+
+.append11 {
+  margin-right: 45.833%; }
+
+.span12 {
+  float: left;
+  width: 50%; }
+
+.prepend12 {
+  margin-left: 50%; }
+
+.append12 {
+  margin-right: 50%; }
+
+.span13 {
+  float: left;
+  width: 54.167%; }
+
+.prepend13 {
+  margin-left: 54.167%; }
+
+.append13 {
+  margin-right: 54.167%; }
+
+.span14 {
+  float: left;
+  width: 58.333%; }
+
+.prepend14 {
+  margin-left: 58.333%; }
+
+.append14 {
+  margin-right: 58.333%; }
+
+.span15 {
+  float: left;
+  width: 62.5%; }
+
+.prepend15 {
+  margin-left: 62.5%; }
+
+.append15 {
+  margin-right: 62.5%; }
+
+.span16 {
+  float: left;
+  width: 66.667%; }
+
+.prepend16 {
+  margin-left: 66.667%; }
+
+.append16 {
+  margin-right: 66.667%; }
+
+.span17 {
+  float: left;
+  width: 70.833%; }
+
+.prepend17 {
+  margin-left: 70.833%; }
+
+.append17 {
+  margin-right: 70.833%; }
+
+.span18 {
+  float: left;
+  width: 75%; }
+
+.prepend18 {
+  margin-left: 75%; }
+
+.append18 {
+  margin-right: 75%; }
+
+.span19 {
+  float: left;
+  width: 79.167%; }
+
+.prepend19 {
+  margin-left: 79.167%; }
+
+.append19 {
+  margin-right: 79.167%; }
+
+.span20 {
+  float: left;
+  width: 83.333%; }
+
+.prepend20 {
+  margin-left: 83.333%; }
+
+.append20 {
+  margin-right: 83.333%; }
+
+.span21 {
+  float: left;
+  width: 87.5%; }
+
+.prepend21 {
+  margin-left: 87.5%; }
+
+.append21 {
+  margin-right: 87.5%; }
+
+.span22 {
+  float: left;
+  width: 91.667%; }
+
+.prepend22 {
+  margin-left: 91.667%; }
+
+.append22 {
+  margin-right: 91.667%; }
+
+.span23 {
+  float: left;
+  width: 95.833%; }
+
+.prepend23 {
+  margin-left: 95.833%; }
+
+.append23 {
+  margin-right: 95.833%; }
+
+.span24 {
+  float: left;
+  width: 100%; }
+
+.prepend24 {
+  margin-left: 100%; }
+
+.append24 {
+  margin-right: 100%; }
+
+body {
+  font: 100%/1.5 Palatino, serif; }
+
+p {
+  padding: 0.8em;
+  background: #eee;
+  margin: 0 10px 10px 0; }
+
+p.img {
+  padding: 0;
+  background: none; }
+
+img {
+  width: 100%; }
+
+.span12 {
+  font-size: 0.9em; }
+
+.span12 .span6 {
+  font-size: 0.7em; }
+
+.span1 p {
+  padding: 0.4em;
+  font-size: 0.7em; }
+
+.span4 {
+  font-size: 0.8em; }

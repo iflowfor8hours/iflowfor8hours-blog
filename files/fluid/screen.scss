@@ -1,0 +1,68 @@
+$grid_columns: 24;        /* number of columns */
+$total_max_width: 1100px;  /* max grid width */
+
+/* compute width of 1 column */
+$grid_col_width: 100% / $grid_columns;
+
+/* create a div spanning n columns */
+@mixin col($n: 1) {
+  float: left;
+  @include span($n);
+}
+
+/* make an element span n columns */
+@mixin span($n: 1) {
+  width: ($n * $grid_col_width);
+}
+
+/* prepend n empty columns */
+@mixin prepend($n: 1) {
+  margin-left: $grid_col_width * $n
+}
+
+/* append n empty columns */
+@mixin append($n: 1) {
+  margin-right: $grid_col_width * $n
+}
+
+/* define max width in EMs for proper grid resizing */
+body { font-size: 100; max-width: ($total_max_width / 16px) + em; } 
+
+/* a row defines a new grid or subgrid */
+.row { float: left; width: 100%; }
+
+/* mixin usage */
+#menu { @include col(5); }
+#side { @include col(5); }
+#main { 
+  @include prepend(1);
+  @include col(12); 
+  @include append(1);
+}
+
+/* For the html example */
+@for $i from 1 through $grid_columns {
+  .span#{$i}    { @include col($i); }
+  .prepend#{$i} { @include prepend($i); }
+  .append#{$i}  { @include append($i); }
+}
+
+body {
+  font: 100%/1.5 Palatino,serif;
+}
+p {
+  padding:0.8em;
+  background:#eee;
+  margin:0 10px 10px 0;
+}
+p.img {
+  padding:0;
+  background:none;
+}
+img {
+  width:100%;
+}
+.span12 { font-size: 0.9em; }
+.span12 .span6 { font-size: 0.7em; }
+.span1 p { padding:0.4em; font-size: 0.7em; }
+.span4 { font-size: 0.8em; }

@@ -1,0 +1,152 @@
+/* from Eric Meyer: v2.0b1 | 201101 */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{border:0;font:inherit;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display:block}
+body{line-height:1}
+ol, ul{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none}
+ins{text-decoration:none}
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0}
+/* end of Eric Meyer's CSS Reset */
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('/fonts/League_Gothic-webfont.eot');
+    src: url('/fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/League_Gothic-webfont.woff') format('woff'),
+         url('/fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('/fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#cse{clear:both;}
+
+table.gsc-branding{display:none}
+div.gs-webResult.gs-result{padding:0 10px}
+.gsc-control-cse div{background:rgba(250,250,250,0.1)}
+.cse .gsc-webResult.gsc-result, .gsc-webResult.gsc-result{border:none !important}
+.gsc-clear-button{display:none}
+.gsc-search-button{display:none}
+.gs-result a.gs-visibleUrl, .gs-result .gs-visibleUrl{color:#666 !important}
+.gs-result .gs-title, .gs-result .gs-title *{color:#c00 !important;font-size:14px !important;font-weight:bold !important; text-decoration:none !important}
+.postdate{clear:both;float:left;width:200px;}
+.post_title{font-size:50px;padding:1em 0 .2em 1em;text-indent:-1em;}
+.site_title{font-size:160px;opacity:.8;padding:30px 0 0;text-align:center;text-transform:lowercase;word-spacing:5px;}
+
+body, input, select, textarea{color:#000;font-family:'helvetica neue',helvetica,arial,sans-serif;font-size:14px;line-height:1.618}
+
+a{color:#c00;text-decoration:none;}
+h1 a, h2 a{color:inherit}
+h5.subscribe a{color:inherit}
+a.archive_list_article_link{color:#000}
+a.nav_list_link{display:inline-block;padding:5px 0}
+a.no_formatting{color:inherit}
+a.tag_list_link{border-left: 1px solid #ccc;color:#888;font-size:14px;font-variant:small-caps;margin:0;padding: 0 6px;text-transform:lowercase;}
+a.tag_list_link:first-child{border:0}
+a.tag_list_link:hover{color:#444;}
+
+abbr, acronym{font-size:1.3em;font-variant:small-caps;line-height:.7698em;text-transform:lowercase;}
+
+article{border-bottom:1px solid #C9C6C3;padding-bottom:40px}
+b{font-weight:bold;}
+blockquote{border-left:5px solid #ccc;color:#444;font-size:13px;margin:10px;padding:0 20px;}
+body{margin:0 auto;padding:0 0 100px;position:relative;width:520px;}
+code{font-family:monaco,monospace;font-size:.9em}
+pre code{background:#f6f6f6;border:1px solid #eee;display:block;overflow:auto;padding:10px 14px;}
+cite{color:#999;display:block;font-size:11px;line-height:13px;padding:0 0 14px;text-align:right;}
+dd{border-left:5px solid #E5F2FF;margin:0 0 1em 10px;padding:0 0 0 10px;}
+div.meta_wrapper{border:1px solid #C9C6C3;border-width:1px 0;color:#666;font-size:12px;line-height:20px;margin:0 0 20px;padding:1px 0;text-transform:uppercase}
+div.project{background:#f6f6f6;border:1px solid #eee;float:left;height:80px;margin:0 20px 20px 0;padding:10px;width:130px;}
+div.project.col3{margin-right:0}
+div.update_box{background:#f6f6f6;border:1px solid #eee;font-size:13px;margin-bottom:1em;padding:8px 10px 0}
+
+dl{}
+dt{font-size:14px;font-weight:bold;}
+
+em{font-style:italic}
+
+footer{padding-top:40px}
+
+form#search{float:right;margin:0 12px 0 auto;position:relative;text-align:center;top:-15px}
+header:after{display:block;clear:both;content:'';float:none;height:1px;}
+
+h1, h2, h3, h4, h5, h6{font-weight:bold;line-height:1;padding-bottom:.2em;}
+h1, h2, h3, h4 {font-family:"LeagueGothicRegular", helvetica,"League Gothic", "Helvetica Neue", helvetica, arial, sans-serif;font-weight:normal;letter-spacing:-.025em;}
+h2{font-size:40px}
+section h2{margin-top:40px;}
+section p+h2{margin-top:26px}
+h3{font-size:30px;margin-left:20px;padding-top:20px;text-indent:-20px}
+h3.archive_list_header{float:right;font-size:25px;letter-spacing:0;line-height:1.2;padding-top:0;padding-bottom:5px;width:423px;}
+h3.project_header{padding-top:60px;}
+h2 + h3.project_header{padding-top:20px;}
+h4{color:#333;font-size:25px;letter-spacing:-.5px;margin-left:20px;padding-top:20px;text-indent:-20px}
+
+header{}
+html{background: #fff background-size:200px 125px}
+
+img.framed{border:10px solid #fff;box-shadow:0 2px 4px #ccc;margin-left:-10px;}
+img.screenshot{box-shadow:0 2px 4px #888;margin: 5px 0 0;}
+
+form#search input{background:rgba(255,255,255,0.8);border:0;box-shadow:inset 0 1px 2px #ccc;-moz-border-radius: 2px;border-radius: 2px;color:#aaa;font-size:13px;font-weight:inherit;height:10px;margin:0 auto;padding:4px 6px;text-align:center;width:120px;}
+input.gsc-input{background:rgba(255,255,255,0.8) !important;border:0 !important;box-shadow:inset 0 1px 2px #ccc;-moz-border-radius: 2px;border-radius: 2px;color:#aaa;font-size:13px;font-weight:inherit;height:10px;margin:0 auto;padding:4px 6px !important;position:absolute;top:179px;right:17px;text-align:center;width:120px !important;}
+
+li{margin:0 0 0 20px;padding:0;}
+article li:last-child{padding-bottom:20px;}
+article li li:last-child{padding: 0;}
+ol li{list-style:decimal}
+ol ol li{list-style:upper-alpha;}
+ul li{list-style:disc;}
+ul.tags li{border-left:1px solid #ccc;display:inline;list-style:none;margin:0;padding:0 8px;position:relative;}
+ul.tags li:first-child{border:0;padding-left:0}
+ul ul li{list-style:circle;}
+li.archive_list{list-style:none;margin:0;padding-bottom:10px;}
+li.inline{display:inline}
+li.nav_list_item{display:inline-block;margin:0;position:relative;width:90px;}
+li.tag_list_item{line-height:1;list-style:none;margin:0;}
+
+p{padding:0 0 1em;}
+p.meta{border:1px solid #eee; border-width:1px 0;color:#888;font-size:12px;margin:0 0 10px;padding:2px 0 2px;}
+p.next_actions{background:#f6f6f6;border:1px solid #eee;font-size:11px;line-height:20px;margin:20px 0 20px;padding:5px 12px;text-align:center;text-transform:uppercase}
+p.project_link_paragraph{padding:0}
+p.summary{color:#444;line-height:1.2;padding:5px 0 5px 58px;}
+blockquote p{padding:0}
+blockquote p+p{padding-top:1em}
+p+pre{margin:-1em 0 1em}
+
+s, strike{text-decoration:line-through}
+
+strong{font-weight:bold;line-height:1em;}
+
+section{margin:0 10px 20px;padding:0 0 40px;}
+
+th.service{font-weight:bold;padding:0 10px;text-align:right}
+
+time.archive_list_post_date{color:#666;float:left;font-size:11px;padding-top:1px}
+
+u{text-decoration:underline}
+
+ul#nav{float:left;font-size:16px;font-variant:small-caps;font-weight:bold;line-height:1;margin:-14px 0 0 24px;text-align:center;text-transform:lowercase;width:270px;}
+
+ul.tag_list_in_post{border-left:1px solid #bbb;display:inline;margin-left:15px;padding:0 0 0 10px;}
+ul.tags{float:right;width:280px}
+ul.tag_list{margin-left:52px;padding-bottom:20px;}
+
+
+@media screen and (max-device-width: 480px) {
+	.post_title{padding-top:40px}
+	.site_title{font-size:150px;margin:0 auto;padding:0;padding-top:10px;}
+	form#search{background:#eee;position:absolute;top:50px}
+	html{background:#fff}
+	li.nav_list_item{width:90px}
+	section{margin:0 0 0 20px;}
+	ul#nav{font-size:20px;margin:-20px 0 0 23px;width:270px}
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait){	
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape){
+	.site_title{font-size:100px}
+}

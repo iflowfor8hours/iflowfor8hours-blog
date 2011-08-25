@@ -1,0 +1,22 @@
+destination: ./_site
+auto:        true
+lsi:         false
+server_port: 3000
+pygments:    true
+markdown:    maruku
+permalink:   /:year/:month/:title
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_dir:    images/latex
+  png_url:    /images/latex
+
+disqus_id: iflowfor8hours
+google_analytics: UA-22586140-1
+plugins: ./_plugins
+
+title:         iflowfor8hours
+description:   Matt Urbanski's blog on programming, sysadmin work, juggling, puppet, and anything else.
+base: http://www.iflowfor8hours.info
+author:        matt urbanski
+email:         matt@iflowfor8hours.info

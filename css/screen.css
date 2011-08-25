@@ -1,0 +1,35 @@
+* { font-size:1.3em; }
+* html { background:#f1f1f1; }
+body { font-family:"minion pro",palatino,times,serif; padding:2em 2em 1px 2em;
+  border:1em solid #f1f1f1; background:#fff; }
+p { line-height:1.7; margin-bottom:1em; text-align:justify; font-size:1.2em; }
+a { color:#900; text-decoration:none; border-bottom:1px dotted #ccc; }
+a:hover { color:#000; border-bottom:1px solid #000; }
+pre { padding:0 0 0 28px; margin:30px 0; font-size:14px; line-height:1.5; border-left:2px solid #eee; overflow:hidden; }
+ul,ol { line-height:1.7; list-style-type:disc; font-size:1.2em; margin:30px 0 30px 30px; }
+h2,h3 { margin-bottom:1.5em; font-size:2em; text-align:center; font-weight:normal; font-family: "palatino","times",serif; }
+h3 { font-size:1.4em; font-style:italic; padding:2em 0 0 0; }
+h2 a { color:#000; }
+h4,h5,h6 { text-transform:uppercase; padding:1em 0; font-weight:normal; font-size:1.2em; letter-spacing:1px; color:#999; }
+h2 + ul, h3 + ul, h5 + ul, h6 + ul { margin-top:0; }
+blockquote { margin:30px 0 30px 30px; font-style:italic; }
+
+#container { max-width:40em; min-width:40em; margin:0 auto; }
+#menu { text-align:center; margin:0 0 4em 0; }
+#menu li { display:inline; margin:0 1px; font-size:16px; } 
+#menu a { border:none; text-transform:uppercase; color:#000; text-shadow:0 0 10px #999; }
+#menu a:hover { border-bottom:1px solid #000; }
+
+#logo { background:url("../images/me.jpg") no-repeat; 
+  width:281px; height:278px; display:block; border:none;
+  margin:-2em auto 4em auto; }
+
+.post { margin-bottom:7em; }
+.post img { padding:1em 0; }
+.post p code { background:#eee; padding:2px 5px; font-size:1em; }
+.post p pre code { background:none; padding:0; font-size:inherit; }
+ul.posts { list-style-type:none; margin:0 0 5em 0; text-align:center; font-size:20px; line-height:2; }
+.single { padding:2em 0; }
+
+li.orn { color:#ddd; font-size:80%; }
+p.date { color:#ccc; }
