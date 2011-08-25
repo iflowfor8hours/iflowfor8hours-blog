@@ -1,0 +1,1 @@
+rsync -avz _site/ www-data@iflowfor8hours.info:/var/www/iflowfor8hours.info/
