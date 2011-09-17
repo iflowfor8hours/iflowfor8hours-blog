@@ -128,7 +128,7 @@ When you are ready to push changes, do a
 
 This should push the changes and update the tree on the puppetmaster, if you have the push-and-update plugin for bzr installed.
 
-## Puppet structure ##
+# Puppet structure #
 
 The best source of ideas of how to structure your puppet modules and infrastructure, I have seen is definitely in the [example42 git repo][5]
 
@@ -143,8 +143,8 @@ The way they do it is easiest to understand if looked at like so:
     site.pp
     -medium/site.pp
     --baselines/minimal.pp
-    ---modules/$modulename/manifests/init.pp
-    --nodes/vo-stage.srfarm.net.pp
+    --modules/$modulename/manifests/init.pp
+    --nodes/staging.farm.net.pp
     -roles/*.pp
 
 ### Handy general debugging commands
