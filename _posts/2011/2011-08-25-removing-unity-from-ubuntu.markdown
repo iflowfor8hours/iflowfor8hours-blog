@@ -10,3 +10,6 @@ Anyway, here they are:
     sudo apt-get remove overlay-scrollbar
     sudo apt-get remove liboverlay-scrollbar-0.1-0
 
+Also, in your package NEVER install the following packages
+
+    unity unity-common

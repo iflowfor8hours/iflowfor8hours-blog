@@ -1,0 +1,13 @@
+I found out how to do this recently and thought it might be helpful to some people. To output this information to a file in your home directory you would use,
+
+Code:
+dpkg --get-selections > installed-software
+And if you wanted to use the list to reinstall this software on a fresh ubuntu setup,
+
+Code:
+dpkg --set-selections < installed-software
+followed by
+
+Code:
+dselect
+
