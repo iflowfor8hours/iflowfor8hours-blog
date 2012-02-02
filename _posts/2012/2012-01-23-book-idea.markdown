@@ -1,0 +1,51 @@
+---
+title: Book Idea
+layout: post
+---
+
+There are plenty of great computing books that are specialized to each and
+every aspect of CS Theory or programming. I got an idea to write a book
+similar to one of my favorite books of all time [The Way Things Work: An
+Illustrated Encyclopedia of Technology](http://www.amazon.com/Way-Things-Work-Illustrated-Encyclopedia/dp/B001IKMLK8/ref=sr_1_8?s=books&ie=UTF8&qid=1327369371&sr=1-8). 
+This book was life changing for me as a child. I've never looked at speakers,
+washing machines, irons, or anything with a motor in it the same way. It also led to a
+multitude of broken electronics in my house, as I became adept with a
+screwdriver. 
+I would like to cover these topics with a depth of knowledge approach, starting with a
+high level question like the ones listed below, and dive as deeply as possible
+into answering each one completely. I'm probably going to draw the line at the
+electrical signal level because that's where my expertise stops, but could be
+convinced to go further if that would be interesting without getting too boring. 
+
+The kinds of questions I want to cover are:
+
+* What happens when I type a URL into a browser window and hit enter?
+* What happens when I type `ls -l` at a unix command prompt?
+* How does making a call on Skype work?
+* How does database replication work? 
+* How does file compression work?
+* How does playing an MP3 work?
+* How does sending an email work?
+* What happens to my credit card data when I buy things online? (HTTPS and
+  security)
+
+I know there are a ton of places on the web where you could get the answer to
+these questions, and copy-pasting any one of them will get you a multitude of
+documents of differing quality and age. I'm looking to write something that's easy
+enough to read for someone without programming/networking/serious computing experience. 
+Much of this has been 'inspired' by SOPA proceedings, and a clip I saw from the
+Daily show, where a few less tactful Representatives said the words "I'm not a nerd, so I
+don't get how this internet thing works". [The video, interesting bit starts at 3:30](http://www.thedailyshow.com/watch/wed-january-18-2012/ko-computer). I want to write something accessible enough for my mom, or congressman.
+I have a few other things that I would like to discuss in it that I think are
+of paramount importance, like DNS propagation and filesystems, but don't really
+know how to pose those as questions that someone without experience would ask. I'm going to start working on it this
+week, and should have at least one of those answered by the end of the month.
+I'll post it and see if anyone likes it, and what I should do differently. 
+
+I'm having trouble visualizing how it would be structured, because at the end
+of almost everything internet related would be TCP/IP, which is pretty dry
+material if you're really just wondering about emails. I'll have to think more
+on this, and come up with a way to present it from a high enough level where if
+you don't care, you can skip it. 
+
+Thoughts?
