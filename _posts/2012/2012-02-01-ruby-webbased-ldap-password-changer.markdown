@@ -130,62 +130,26 @@ I installed it and got to messing with it. Seemed really really easy at first. G
 
 HAML was a really nice surprise. Concise, easy, to the point. I was trying to do some not-so-fancy stuff with inheritance and couldn't figure that out immediately, but getting the application working is my first priority, and I'll worry about how to make the code look good later. 
 
-I have the application working now, and have to worry about deploying it now. It's just a few lines of ruby, and I would like to run it directly from sinatra and WebBRICK, but I know that's really not the right thing to do if the server is already running an apache instance. 
+The script itself looks alot like the one above. I just changed the names of the username currentpassword and newpassword variables and was on my way. The sinatra side of things is below.
 
-I jumped through all the (admittely easy) hoops of installing installing passenger and getting it up and running. The thing that screwed me up was that I didn't know that you had to have an empty directory named /public under the application root. That piece of information was integral, and really frustrating. Now I know. Woot.
-
-Getting my command line application to work as a web based application was trickier than I thought it would be though. 
-
-
-
-<S-Insert>
-root@v2:ldappwchange.vo.srfarm.net# cat changepass.rb 
-#/usr/bin/ruby -w
-
-require 'ldap'
-
-username 	= #{params[:username]}
-currentpassword = #{params[:currentPassword]}
-newpassword	= #{params[:newPassword]}
-
-$HOST =    'localhost'
-$PORT =    LDAP::LDAP_PORT
-LDAP::Conn.set_option(LDAP::LDAP_OPT_PROTOCOL_VERSION, 3 )
-
-def changepass(username, currentpassword, newpassword)
-  conn = LDAP::Conn.new($HOST, $PORT)
-  conn.bind("uid=#{username}, ou=people, dc=steeprockinc, dc=com","#{currentpassword}")
-  changepw=[LDAP::Mod.new(LDAP::LDAP_MOD_REPLACE, 'userPassword', ["#{newpassword}"]),]
-  begin
-    conn.modify("uid=#{username}, ou=people, dc=steeprockinc, dc=com", changepw)
-  rescue LDAP::ResultError
-    conn.perror("modify")
-    exit
-  conn.unbind
+  require 'rubygems'
+  require 'sinatra'
+  require 'changepass'
+  
+  get '/form' do
+    username        = params[:username]
+    currentPassword = params[:currentPassword]
+    newPassword     = params[:newPassword]
+    haml :form
   end
-end
-root@v2:ldappwchange.vo.srfarm.net# cat change-pass-web.rb 
-require 'rubygems'
-require 'sinatra'
-require 'changepass'
+  
+  post '/form' do
+    changepass("#{params[:username]}", "#{params[:currentPassword]}", "#{params[:newPassword]}")
+  end
 
-#hostname = IO.popen('hostname').readlines.to_s
+I have the application working now, and have to worry about deploying it now. It's just a few lines of ruby, and I would like to run it from sinatra and WebBRICK, but I know that's really not the right thing to do if the server is already running an apache instance, which is was. 
 
-get '/form' do
-  username        = params[:username]
-  currentPassword = params[:currentPassword]
-  newPassword     = params[:newPassword]
+I jumped through all the (admittely easy) hoops of installing installing passenger and getting it up and running. The thing that screwed me up was that I didn't know that you had to have an empty directory named /public under the application root. That piece of information was integral, and really frustrating. It actually was the most time consuming part of this whole project. After I installed and got passenger running, I debugged this issue for about 2 hours. I know, what a waste, I should have just known I needed it. Oh well. Now I know. Woot.
 
-  haml :form
-end
-
-post '/form' do
-#  {params[:username]}
-#  {params[:currentPassword]}
-#  {params[:newPassword]}
-
-  changepass("#{params[:username]}", "#{params[:currentPassword]}", "#{params[:newPassword]}")
-
-end
-
+I learned quite a bit, and am looking forward to coding in ruby more often, as I plan on building some web apps in the very near future. 
 
