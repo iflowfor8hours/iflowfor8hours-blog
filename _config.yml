@@ -15,8 +15,8 @@ disqus_id: iflowfor8hours
 google_analytics: UA-22586140-1
 plugins: ./_plugins
 
-title:         iflowfor8hours
-description:   Matt Urbanski's blog on programming, sysadmin work, juggling, puppet, and anything else.
+title:         iflowfor8hours - Matt Urbanski's devops blog
+description:   Matt Urbanski's blog on programming, devops, sysadmin work, juggling, puppet, and anything else.
 base: http://www.iflowfor8hours.info
 author:        matt urbanski
 email:         matt@iflowfor8hours.info
