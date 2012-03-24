@@ -104,25 +104,26 @@ Developers (and everyone else) can push to dev and qa. Once the code arrives at 
     
 All of the builds are automated, but in reality, I would probably make that last push a manual one, or at least on that wasn't on a cron job. If it were more than 2 steps, I would automate it, but I think forcing members of the ops team to actually decide to deploy the application after it is in the master repo (and tagged so we can roll back!) is OK. 
         
+##### Post Mortem writeup #####
+
 What commands to execute to deploy the application?
-Clicking on the build now in jenkins will build and deploy the application. You can also do it from the command line by launching ant from the root of the application directory. 
+
+* Clicking on the build now in jenkins will build and deploy the application. You can also do it from the command line by launching ant from the root of the application directory. 
   
-The challenges I've faced in implementing this process have been:
-  I should have actually checked the machine out first instead of developing blindly on my local box. I would have saved some time that way. 
-  I wish I knew more about deploying tomcat applications. I added some logging (/var/log/tomcat5.5/tomcat.log) and still couldn't figure out what was wrong. I'm fairly certain what I need is in the web.xml file, but I'm not sure what it is. 
-  I'm sure there's a better way of writing that build.xml file, but this works and is maintainable for the moment.
-    
 If I had more time: 
-  The ops side of my brain is screaming because this box doesn't exist because it's not monitored, and the basics (ntp, dns, ip, hostname, tomcat, etc..) are unmanaged. I could have included a bunch of modules that I use regularly, but I think that would just confuse things for this project. 
-  Redmine. Setting up redmine by hand is really easy. Doing an automated redmine deployment and integrating it with jenkins is not. I would have set it up by hand 'for show', but I came to the conclusion that it didn't make any sense to do so. I think having a ticket tracking system is essential to any good software project, and if you're not going to pay for JIRA (free tools only in the project description) then redmine is the way to go.
-  I would write an egit wrapper for git-flow. git-flow makes so much sense to me, but windows users can't use it.
-  My restart tomcat on every build paradigm is clumsy. I would manage each container seperately so that restarts on the qa environment would not effect anyone else. Doing this would probably necessitate managing tomcat through puppet, which would be the right way of deploying thisin production. As I said above, I would have built modules for all of the components of the system that required configuration. Every once in a while, a build fails because /etc/init.d/tomcat tomcat fails to execute. This could be fixed by siloing each environment and just reloading instead of restarting. 
+
+* The ops side of my brain is screaming because this box doesn't exist because it's not monitored, and the basics (ntp, dns, ip, hostname, tomcat, etc..) are unmanaged. I could have included a bunch of modules that I use regularly, but I think that would just confuse things for this project. 
+* Redmine. Setting up redmine by hand is really easy. Doing an automated redmine deployment and integrating it with jenkins is not. I would have set it up by hand 'for show', but I came to the conclusion that it didn't make any sense to do so. I think having a ticket tracking system is essential to any good software project, and if you're not going to pay for JIRA (free tools only in the project description) then redmine is the way to go.
+* I would write an egit wrapper for git-flow. git-flow makes so much sense to me, but windows users can't use it.
+* My restart tomcat on every build paradigm is clumsy. I would manage each container separately so that restarts on the qa environment would not effect anyone else. Doing this would probably necessitate managing tomcat through puppet, which would be the right way of deploying this in production. As I said above, I would have built modules for all of the components of the system that required configuration. Every once in a while, a build fails because `/etc/init.d/tomcat` tomcat fails to execute. This could be fixed by siloing each environment and just reloading instead of restarting. 
   
 Why were certain tools selected:
-  Jenkins because I think it is the best tool for the job when it comes to continious integration. It's mature, stable, and easy to deploy. There are a ton of plugins, and it scales well. Authentication can be added pretty easily, 
-  Puppet because I'm most familiar with it. I could have used any number of configuration management tools, but this is the one I know best. 
-  Git because I think it's the best dvcs there is. It is a pain that windows users have to use a graphical interface but I think most windows developers are used to that. 
+
+* Jenkins because I think it is the best tool for the job when it comes to continious integration. It's mature, stable, and easy to deploy. There are a ton of plugins, and it scales well. Authentication can be added pretty easily, 
+* Puppet because I'm most familiar with it. I could have used any number of configuration management tools, but this is the one I know best. 
+* Git because I think it's the best dvcs there is. It is a pain that windows users have to use a graphical interface but I think most windows developers are used to that. 
 
 What is your recommendation for future work if time allows? 
-  I would build modules for the 'moving parts' of the server, as I mentioned above, and figure out why the application did not deploy properly. 
+
+* I would build modules for the 'moving parts' of the server, as I mentioned above, and figure out why the application did not deploy properly. 
 
