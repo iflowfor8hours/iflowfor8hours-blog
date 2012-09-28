@@ -1,4 +1,4 @@
-#!/home/matt/.rvm/rubies/ruby-1.9.2-p290/bin/ruby
+#!/usr/bin/ruby
 #
 # Create new jekyll post and open in textmate
 # $ ruby _new.rb This is the title
