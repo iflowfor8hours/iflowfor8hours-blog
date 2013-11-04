@@ -4,7 +4,7 @@ layout: post
 ---
 
 I've never had to use databags before in chef-solo, but this past week I needed to do some exploration with the [opscode squid cookbook](https://github.com/opscode-cookbooks/squid). Aside from the [opscode databag docs](http://docs.opscode.com/essentials_data_bags.html), I couldn't find much good information on it, so here goes. 
-## Vagrant
+### Vagrant
 This part is straightforward. Just add a directory where your Vagrantfile lives and then include a databags_path in your provisioning block. 
 
 	config.vm.provision :chef_solo do |chef|
@@ -14,7 +14,7 @@ This part is straightforward. Just add a directory where your Vagrantfile lives 
 	    "recipe[rubygems_proxy::default]"
 	  ]
 	end
-## Databag structure
+### Databag structure
 Databags must be in a directory with a name matching the databag. Each individual databag must be a json file, the only requirement being a `id` element. The (truncated for clarity) directory structure looks like:
 
 	.
@@ -28,7 +28,7 @@ Databags must be in a directory with a name matching the databag. Each individua
 	|       |-- everythingelse.json
 	|       `-- rubygems.json
 	`-- Vagrantfile
-## Databag items
+### Databag items
 Databag items themselves, as mentioned above, only need to contain an `id` element to be considered valid. 
 
 	{                                                                                  
@@ -39,7 +39,7 @@ Databag items themselves, as mentioned above, only need to contain an `id` eleme
 	  ]
 	} 
 
-## Using Databags
+### Using Databags
 In the squid cookbook, databags are used to describe ACL rules and hosts which are retrieved using a library. To access  them in your recipes (or libraries or resources), use the `data_bag()` method. In a chef server and chef client environment, you can leverage `search()`, but this is not available in chef-solo out of the box.
 
 	def squid_load_host_acl
