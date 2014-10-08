@@ -24,6 +24,6 @@ Internal presentation that I gave to my coworkers about different kinds of virua
 
 A presentation with an interactive component at the end to get people familiar with Chef concepts and practices. The interactive component is [here](https://github.com/chef-tutorials/)
 
-### [Developing Chef Cookbooks, a Better Way](http://www.iflowfor8hours.info/presentations/lwrp/lwrp-slides.html)
+### [Developing Chef Cookbooks a Better Way](http://www.iflowfor8hours.info/presentations/lwrp/lwrp-slides.html)
 
-A presentation that was used to introduce good patterns in cookbook development using LWRPs and the wrapper library cookbook pattern. 
+A presentation that was used to introduce good patterns in cookbook development using LWRPs and the wrapper library cookbook pattern.
