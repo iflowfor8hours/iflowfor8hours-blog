@@ -12,10 +12,6 @@ On 15 March 2014, Adam Nelson of kili.io and I organized the first African Devop
 
 A very short, basic intro to puppet and some of it's cooler features. Built with landslide, an awesome js slideshow library.
 
-### [Puppet bootcamp presentation](http://www.iflowfor8hours.info/presentations/puppetbootcamp.html)
-
-Some overlap with the short puppet talk, but more hands-on. I made this for a bootcamp I gave at smartopsatlanta. Also built with landslide.
-
 ### [Practical Vagrant](https://slid.es/urbanskims/scrum-gathering-vagrant)
 
 Quick introduction to using vagrant that I gave at the 2013 South Africa Scrum Gathering. There is a [github repo](https://github.com/iflowfor8hours/vagrant-tutorial) for the practical part.
@@ -27,3 +23,7 @@ Internal presentation that I gave to my coworkers about different kinds of virua
 ### [Blazing through the Kitchen: An introduction to Opscode Chef](http://www.iflowfor8hours.info/presentations/chef_intro/chef_intro.html)
 
 A presentation with an interactive component at the end to get people familiar with Chef concepts and practices. The interactive component is [here](https://github.com/chef-tutorials/)
+
+### [Developing Chef Cookbooks, a Better Way](http://www.iflowfor8hours.info/presentations/lwrp/lwrp-slides.html)
+
+A presentation that was used to introduce good patterns in cookbook development using LWRPs and the wrapper library cookbook pattern. 
