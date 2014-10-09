@@ -4,7 +4,6 @@ port: 4000
 pygments:    true
 markdown:    maruku
 permalink:   /:year/:month/:title
-exclude: ["presentations"]
 maruku:
   use_tex:    false
   use_divs:   false
